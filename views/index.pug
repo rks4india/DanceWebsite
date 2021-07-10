@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Rahul Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src='./static/img/logo.png')
+                | RDA
+            li #[a(href='/') Home] 
+            li #[a(href='/') About] 
+            li #[a(href='/') Contact us] 
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Services] 
+    
+    section#introSection
+        div Welcome to Rahul's Dance Academy
+        div.small Eat Sleep Dance Repeat 
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src = './static/img/1.png')
+                div.card-content 
+                    p this is one of the best dance academy in India
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src = './static/img/2.png')
+                div.card-content 
+                    p this is one of the best dance academy in India            
+        div.card 
+            h3 Become professional Dancer
+            div.card-box 
+                div.card-img 
+                    img(src = './static/img/3.png')
+                div.card-content 
+                    p this is one of the best dance academy in India
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src='./static/img/logo1.png', alt='Sponsor Image', Class='spImage')
+            img(src='./static/img/logo2.png', alt='Sponsor Image', Class='spImage')
+            img(src='./static/img/logo3.png', alt='Sponsor Image', Class='spImage')
+            img(src='./static/img/logo4.png', alt='Sponsor Image', Class='spImage')
+    footer#footer 
+        | Copyright &copy; 2021, RahulDanceAcademy | All Rights Reserved.
+
+
+    script
+      include ../static/script.js
